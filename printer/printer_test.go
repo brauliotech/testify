@@ -2,6 +2,7 @@ package printer
 
 import (
 	"fmt"
+	"testify/mocks"
 	"testing"
 
 	"github.com/stretchr/testify/mock"
@@ -22,7 +23,7 @@ func (d *PrinterMock) Print(paperSize string, content string) error {
 
 func TestPrintA4(t *testing.T) {
 	// create a printer mock
-	printer := &PrinterMock{}
+	printer := &mocks.Printer{}
 
 	// set expectation that the mocked function will receive
 	// "A4" and "Hello world" as its input and got a return value
