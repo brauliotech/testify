@@ -3,6 +3,6 @@
 Examples using [testify](	github.com/stretchr/testify/assert)
 
 ## Features
-- Asserts
-- Mocks
-- Suite
+- Assertions
+- Mocking
+- Test suite interfaces/functions
